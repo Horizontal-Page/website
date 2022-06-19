@@ -1,0 +1,37 @@
+// variables
+@use './variables';
+// font-familys
+// font-family: "Roboto Condensed", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet');
+// font-family: "Fira Mono", monospace;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet');
+// font-family: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+}
+body {
+  background-color: variables.$background-color;
+  min-height: 100vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(46, 46, 46);
+}

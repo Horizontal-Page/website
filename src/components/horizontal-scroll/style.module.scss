@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+  .sticky {
+    position: sticky;
+    top: 0;
+    width: fit-content;
+    overflow: hidden;
+    width: 100%;
+    .wrapper {
+      display: flex;
+      width: fit-content;
+      > div {
+        width: 100vw;
+        height: 100vh;
+      }
+      .firstSection {
+        background-color: #07070a;
+      }
+      .secondSection {
+        background-color: #4a525a;
+      }
+      .thirdSection {
+        background-color: #004ba8;
+      }
+    }
+  }
+}

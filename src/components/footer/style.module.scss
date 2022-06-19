@@ -1,0 +1,39 @@
+.container {
+  padding: 2em;
+  background-color: #d2d2d2;
+  * {
+    font-family: "Open Sans", sans-serif;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    font-size: 1.1em;
+    .rightcol {
+      display: flex;
+      gap: 0.2em;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      a {
+        color: rgb(0, 128, 255);
+        cursor: pointer;
+      }
+    }
+    .leftcol {
+      width: 100%;
+      display: flex;
+      gap: 0.5em;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      b {
+        cursor: pointer;
+      }
+    }
+  }
+}
