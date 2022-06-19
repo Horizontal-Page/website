@@ -30,7 +30,7 @@ function Component() {
         <div className={styles.leftcol}>
           <h1>HORIZONTAL SCROLLING LIBRARY</h1>
           <span className={styles.subject}>
-            {`Horizontal scroll (水平滚动) is a open source javascript library it will help you to achieve you desire horizontal scrolling.`}
+            {`Horizontal scroll (水平滚动) is an open-source javascript library it will help you to achieve your desire horizontal scrolling. Help me make it better!`}
             <a
               href="https://github.com/Babailan/horizontal-scroll"
               rel="noreferrer"

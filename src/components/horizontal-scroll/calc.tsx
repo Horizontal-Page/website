@@ -1,20 +1,22 @@
 // calculateTransformX
 
-/**
- * @param windowY windowScroll Y-AXIS
- * @param bottom bottom of the container
- */
-function calcTrans(
-  windowY: number | any,
-  top: number | string | any,
-  bottom: number | string | any
-) {
-  if (windowY < top) {
+// container of horizontal
+interface oby {
+  top: number | string | any;
+  bottom: number | string | any;
+  maxtransform: number | string | any;
+}
+
+function calcTrans(oby: oby) {
+  const c =
+    Math.abs((oby.top - window.scrollY) / (oby.bottom - window.innerHeight)) *
+    oby.maxtransform;
+  if (window.scrollY < oby.top) {
     return 0;
-  } else if (windowY > bottom) {
-    return top + -Math.abs(bottom);
+  } else if (window.scrollY > oby.bottom) {
+    return oby.maxtransform;
   } else {
-    return top - windowY;
+    return c;
   }
 }
 
