@@ -1,0 +1,20 @@
+.container {
+  display: block;
+  cursor: pointer;
+  border: 1px solid #8a8a8a;
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  padding: 0.7em;
+  justify-content: space-between;
+  gap: 0.5em;
+  span {
+    font-family: "Fira Mono", monospace;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  &:hover {
+    background-color: rgba(0, 255, 60, 0.284);
+  }
+}
