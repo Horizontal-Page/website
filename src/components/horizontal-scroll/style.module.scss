@@ -1,34 +1,26 @@
-.container {
+.h1 {
+  font-size: 70vh;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.containerImage {
   position: relative;
-  .sticky {
-    position: sticky;
-    top: 0;
-    width: fit-content;
-    overflow: hidden;
-    width: 100%;
-    .wrapper {
-      display: flex;
-      width: fit-content;
-      height: 100vh;
-      > div {
-        min-width: 100vw;
-        height: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-      }
-      .content {
-        white-space: nowrap;
-      }
-      .firstSection {
-        font-size: 40vh;
-        padding: 0.1em;
-        color: #eeeeee;
-        -webkit-text-stroke: #000 2px;
-      }
-      .secondSection {
-        position: relative;
-        // background-color: #000;
-      }
+  height: 100vh;
+  min-width: 100vw;
+}
+.lastWord {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
+  h1 {
+    font-size: 30vh;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 10px;
+      cursor: pointer;
     }
   }
 }

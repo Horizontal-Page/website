@@ -1,12 +1,11 @@
 .container {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   a {
     font-family: "Open Sans", sans-serif;
     text-align: center;
-    font-size: 10vw;
+    font-size: 8vw;
     color: rgb(34, 34, 34);
     text-decoration: none;
     &:hover {

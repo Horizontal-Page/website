@@ -2,7 +2,6 @@
 
 .container {
   width: 100%;
-  min-height: 100vh;
   .header {
     background-color: variables.$backgroundheader-color;
     .wrapper {
@@ -34,12 +33,12 @@
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
     min-height: 80vh;
     max-width: 1000px;
-    margin: auto;
     gap: 2em;
+    justify-content: center;
+    margin: auto;
     .leftcol {
       font-size: 1.4em;
       max-width: 500px;
@@ -53,21 +52,37 @@
       }
     }
     .rightcol {
-      width: 350px;
-      .installHeader {
-        font-weight: 800;
-        margin-bottom: 5px;
-      }
-      .availableWrapper {
-        display: block;
-        margin-top: 1em;
-        .first {
-          font-weight: 800;
-          font-size: 1.1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      .viewButton {
+        cursor: pointer;
+        padding: 0.5em 2em;
+        border: 1px solid #000;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.5s;
+        &::after {
+          content: "";
+          transition: 0.5s;
+          top: 0;
+          left: 0;
+          right: 0;
+          position: absolute;
+          margin: auto;
+          height: 100%;
+          border-radius: 20px;
+          width: 0%;
+          background-color: rgba(150, 150, 150, 0.219);
         }
-        .last {
-          font-size: 0.9em;
-          font-family: "Fira Mono", monospace;
+        &:hover {
+          &::after {
+            width: 100%;
+          }
         }
       }
     }

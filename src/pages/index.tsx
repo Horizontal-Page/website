@@ -1,9 +1,9 @@
 import Introduction from "../components/introduction";
 // import Instructions from "../components/instructions"; //later
-import Horizontal from "../components/horizontal-scroll"; // horizontal Component
 import Footer from "../components/footer";
 import Epilogue from "../components/epilogue";
 import Head from "next/head";
+import Instructions from "../components/instructions";
 function Page() {
   return (
     <>
@@ -20,8 +20,7 @@ function Page() {
         <meta name="author" content="Ronnel Babailan"></meta>
       </Head>
       <Introduction />
-      {/* <Instructions /> */}
-      <Horizontal />
+      <Instructions />
       <Epilogue />
       <Footer />
       <div style={{ position: "fixed", bottom: "0", right: "0" }}>

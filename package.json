@@ -1,5 +1,5 @@
 {
-  "name": "horizontal-page",
+  "name": "website-horizontal-page",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -33,9 +33,10 @@
     "@types/react": "^18.0.14",
     "lint": "^0.7.0",
     "next": "^12.1.6",
-    "prism-react-renderer": "^1.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-highlight": "^0.14.0",
+    "react-horizontal-page": "^0.0.7",
     "sass": "^1.52.3",
     "typescript": "^4.7.3"
   },

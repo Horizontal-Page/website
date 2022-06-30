@@ -4,13 +4,11 @@ function Component() {
   return (
     <div className={styles.container}>
       <a
-        href="https://github.com/horizontal-scroll"
+        href="https://github.com/horizontal-page"
         target={"_blank"}
         rel="noreferrer"
       >
-        GITHUB
-        <br />
-        ORGANIZATION
+        QWERTY
       </a>
     </div>
   );
