@@ -1982,10 +1982,9 @@
   dependencies:
     "highlight.js" "^10.5.0"
 
-"react-horizontal-page@^0.0.7":
-  "integrity" "sha512-Od0hn+pTyPGKHdS7XJzRhF20jnyudJBlLw2RAjAwjPmeZ3x1vh2E6Bvi7okEP8F3nctqq3plQCCwPyhxutBo7g=="
-  "resolved" "https://registry.npmjs.org/react-horizontal-page/-/react-horizontal-page-0.0.7.tgz"
-  "version" "0.0.7"
+"react-horizontal-page@file:../react-horizontal-page":
+  "resolved" "file:../react-horizontal-page"
+  "version" "0.0.4"
 
 "react-is@^16.13.1":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="

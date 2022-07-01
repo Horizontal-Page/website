@@ -2,45 +2,18 @@
 
 .container {
   width: 100%;
-  .header {
-    background-color: variables.$backgroundheader-color;
-    .wrapper {
-      max-width: 1100px;
-      margin: auto;
-      color: #fff;
-      padding: 0.7em 0.5em;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .leftcol {
-        .title {
-          font-size: 1.1em;
-          font-weight: 700;
-          background-color: variables.$background-color;
-          color: #000;
-          padding: 0.5em;
-        }
-      }
-      .rightcol {
-        .githubIcon {
-          cursor: pointer;
-          color: #fff;
-        }
-      }
-    }
-  }
   .content {
     padding: 1em;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     min-height: 80vh;
     max-width: 1000px;
     gap: 2em;
     justify-content: center;
     margin: auto;
+    flex-direction: column;
     .leftcol {
-      font-size: 1.4em;
+      font-size: 1.3em;
       max-width: 500px;
       .subject {
         font-family: "Fira Mono", monospace;
@@ -56,7 +29,6 @@
       flex-direction: column;
       justify-content: center;
       text-align: center;
-
       .viewButton {
         cursor: pointer;
         padding: 0.5em 2em;
@@ -89,8 +61,11 @@
   }
 }
 
-@media (min-width: 500px) {
-  .rightcol {
-    margin-top: 0 !important;
+@media (min-width: 769px) {
+  .content {
+    flex-direction: row !important;
+    .leftcol {
+      font-size: 1.5em !important;
+    }
   }
 }

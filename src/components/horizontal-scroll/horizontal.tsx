@@ -2,27 +2,43 @@ import styles from "./style.module.scss";
 import HorizontalPage from "react-horizontal-page";
 import Image from "next/image";
 import lol from "../../assets/lol.jpg";
-import Router from "next/router";
+import { LegacyRef, useEffect, useRef } from "react";
+import Nav from "../nav";
 
 function Component() {
+  const ref: LegacyRef<HTMLHeadingElement> = useRef();
+  useEffect(() => {
+    const lol = new IntersectionObserver((entries) => {
+      entries.map((entry) => {
+        console.log(entry);
+      });
+    });
+    if (ref.current) {
+      lol.observe(ref.current);
+    }
+  }, []);
   return (
-    <HorizontalPage lerp={0.3} multiplier={0.5}>
-      <h1 className={styles.h1}>HORIZONTAL SCROLLING!</h1>
-      <div style={{ position: "relative" }} className={styles.containerImage}>
-        <Image
-          src={lol}
-          layout={"fill"}
-          objectFit={"contain"}
-          alt={"saitama"}
-        />
-      </div>
-      <div className={styles.lastWord} onClick={() => Router.push("/")}>
-        <h1>
-          GO BACK TO <br />
-          HOMEPAGE
-        </h1>
-      </div>
-    </HorizontalPage>
+    <>
+      <HorizontalPage
+        multiplier={1.5}
+        style={{
+          display: "flex",
+          alignItems: "center",
+        }}
+        lerp={1}
+      >
+        <h1 className={`${styles.h1} stroke`}>HORIZONTAL SCROLLING!</h1>
+        <div style={{ position: "relative" }} className={styles.containerImage}>
+          <Image
+            src={lol}
+            layout={"fill"}
+            objectFit={"contain"}
+            alt={"saitama"}
+          />
+        </div>
+      </HorizontalPage>
+      <Nav title={true} />
+    </>
   );
 }
 

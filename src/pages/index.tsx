@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import Epilogue from "../components/epilogue";
 import Head from "next/head";
 import Instructions from "../components/instructions";
+import Nav from "../components/nav";
 function Page() {
   return (
     <>
@@ -19,6 +20,7 @@ function Page() {
         <meta name="keywords" content="Horizontal"></meta>
         <meta name="author" content="Ronnel Babailan"></meta>
       </Head>
+      <Nav title={false} />
       <Introduction />
       <Instructions />
       <Epilogue />

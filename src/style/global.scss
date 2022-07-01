@@ -20,6 +20,11 @@ body {
   background-color: variables.$background-color;
   min-height: 100vh;
 }
+.stroke {
+  color: transparent;
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: 2px;
+}
 
 // /* width */
 // ::-webkit-scrollbar {
