@@ -19,7 +19,7 @@ function Component() {
             className={styles.desktop}
             onClick={() => window.scroll({ top: 0 })}
           >
-            horizontal-scroll.vercel.app
+            horizontal-page.vercel.app
           </b>
           &copy;{0x7e6 !== year ? `${0x7e6}-${year}` : 0x7e6}
         </div>

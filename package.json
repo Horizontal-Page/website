@@ -6,23 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Babailan/horizontal-scroll.git"
   },
   "keywords": [
-    "horizontal",
-    "scrolling"
+    "HORIZONTAL PAGE"
   ],
-  "author": "ronnel babailan",
-  "license": "ISC",
+  "author": "Ronnel Babailan",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Babailan/horizontal-scroll/issues"
+    "url": "https://github.com/Horizontal-Page/website/issues",
+    "email": "babailanxx@gmail.com"
   },
-  "homepage": "https://github.com/Babailan/horizontal-scroll#readme",
+  "homepage": "https://horizontal-page.vercel.app/",
   "description": "",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -35,9 +34,9 @@
     "next": "^12.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-highlight": "^0.14.0",
-    "react-horizontal-page": "file:../react-horizontal-page",
+    "react-horizontal-page": "^0.0.7",
     "sass": "^1.52.3",
+    "sharp": "^0.30.7",
     "typescript": "^4.7.3"
   },
   "devDependencies": {

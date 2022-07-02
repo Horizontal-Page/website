@@ -5,11 +5,26 @@
   align-items: center;
   white-space: nowrap;
 }
+
 .containerImage {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
   min-width: 500px;
+}
+.whatisThis {
+  width: 100vw;
+  min-width: 800px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .thanks {
+    font-size: 15vh;
+    text-align: center;
+    transform: rotate(-20deg);
+  }
 }
 
 .bottom {
@@ -49,6 +64,22 @@
     &:hover {
       color: #000;
       background-color: rgb(255, 255, 255);
+    }
+  }
+}
+
+.footer {
+  background-color: variables.$backgroundheader-color;
+  .wrapper {
+    font-size: 1.2em;
+    padding: 1em;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    p {
+      color: #fff;
+      cursor: pointer;
     }
   }
 }

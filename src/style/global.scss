@@ -26,20 +26,21 @@ body {
   -webkit-text-stroke-width: 2px;
 }
 
-// /* width */
-// ::-webkit-scrollbar {
-//   width: 10px;
-// }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-// /* Track */
-// ::-webkit-scrollbar-track {
-//   background: transparent;
-// }
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
 
-// /* Handle */
-// ::-webkit-scrollbar-thumb {
-//   background: rgb(46, 46, 46);
-// }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(3, 3, 3);
+  border-radius: 10px;
+}
 
 // code
 pre code.hljs {
